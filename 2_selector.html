@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .intro {
+            height: 200px;
+        }
+        .demo {
+            background: lightblue;
+            /*display: none;*/
+        }
+    </style>
+    <script src="../js/jquery.js"></script>
+    <script>
+        $(function () {
+            $('.intro.demo').click(function () {
+                $(this).slideUp(3000);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="intro demo">div...</div>
+<span>span...</span>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery.js"></script>
+    <script>
+        $(function () {
+//            $(':input').css('background', '#f00');
+//            $(':submit').css('background', '#f00');
+//            $(':enabled').css('background', '#f00');
+//            $(':selected').css('font-size', '3em');
+            $(':checked').hide();
+        });
+    </script>
+</head>
+<body>
+<form action="">
+    <input type="text" placeholder="USERNAME" value=" "><br>
+    <input type="password" placeholder="PASSWORD" value=" " disabled><br>
+    <input type="radio" name="gender" checked>M
+    <input type="radio" name="gender">F
+    <br>
+    <select multiple>
+        <option value="">A</option>
+        <option value="">B</option>
+        <option value="" selected>C</option>
+    </select><br>
+    <input type="submit" value="SUBMIT">
+</form>
+</body>
+</html>
